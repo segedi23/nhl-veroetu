@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="fi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<style>*,*::before,*::after{box-sizing:border-box}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Veroetu jäällä</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: pitkä lukuteksti yhdessä ~66ch palstassa; lukulaatikot ja nettopalkkavertailu palstan levyisinä. Sama väriperhe kuin datasivulla. */
+:root{
+  --bg:#f3f6f8; --surface:#ffffff; --fg:#14202b; --muted:#5a6b78; --line:#d6dee5;
+  --nt:#0f8a7e; --ca:#c2413b; --accent:#0f5c8a;
+  --f-display:"Barlow Condensed","Arial Narrow",sans-serif;
+  --f-body:"Source Serif 4",Georgia,serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0e161d; --surface:#15212b; --fg:#e4ebf0; --muted:#93a4b1; --line:#2a3a47;
+  --nt:#35c2b1; --ca:#ec6f68; --accent:#6db6e6; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0e161d; --surface:#15212b; --fg:#e4ebf0; --muted:#93a4b1; --line:#2a3a47;
+  --nt:#35c2b1; --ca:#ec6f68; --accent:#6db6e6; color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font:1.1rem/1.7 var(--f-body)}
+article{max-width:42rem;margin:0 auto;padding-inline:20px;padding-block:48px 80px;display:flex;flex-direction:column;gap:22px}
+h1,h2{font-family:var(--f-display);font-weight:700;line-height:1.02;text-wrap:balance;margin:0}
+h1{font-size:clamp(2.6rem,8vw,4.2rem)}
+h2{font-size:1.9rem;margin-top:22px}
+p{margin:0}
+.kicker{font-family:var(--f-mono);font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.dek{font-size:1.3rem;line-height:1.45;color:var(--fg)}
+.byline{font-family:var(--f-mono);font-size:.82rem;color:var(--muted);border-top:3px solid var(--fg);padding-top:12px}
+.big{display:grid;grid-template-columns:repeat(auto-fit,minmax(11rem,1fr));gap:16px;padding-block:6px}
+.big div{border-top:2px solid var(--line);padding-top:8px;font-size:.92rem;color:var(--muted);line-height:1.4}
+.big b{display:block;font-family:var(--f-display);font-size:2.5rem;line-height:1;color:var(--fg);font-variant-numeric:tabular-nums}
+.big .nt b{color:var(--nt)} .big .ca b{color:var(--ca)}
+.cmp{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:18px;display:flex;flex-direction:column;gap:10px;font-family:var(--f-mono);font-size:.85rem}
+.cmp .lbl{display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap}
+.cmp .lbl span:first-child{font-weight:500}
+.track{height:30px;background:var(--line);border-radius:3px;overflow:hidden;margin-bottom:6px}
+.fill{height:100%;display:flex;align-items:center;padding-left:10px;color:#fff;font-weight:500;white-space:nowrap}
+.c-ca{background:var(--ca)} .c-nt{background:var(--nt)}
+.c-ca2{background:var(--ca);opacity:.6}
+.cmp small{color:var(--muted);font-size:.8rem;line-height:1.5}
+.gm{display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:14px}
+.gm div{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:14px 16px;font-size:1rem;line-height:1.5}
+.gm b{display:block;font-family:var(--f-display);font-size:1.4rem;margin-bottom:4px}
+.gm .w b{color:var(--ca)} .gm .f b{color:var(--nt)}
+blockquote{margin:0;padding-left:18px;border-left:3px solid var(--accent);font-style:italic;font-size:1.25rem;line-height:1.5}
+ul{margin:0;padding-left:1.2rem;display:flex;flex-direction:column;gap:6px}
+.cta{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:18px 20px;font-size:1rem}
+a{color:var(--accent);text-underline-offset:3px}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.fine{font-size:.88rem;color:var(--muted);line-height:1.55}
+</style>
+</head>
+<body>
+
+
+<article>
+  <div class="kicker">NHL · palkkakatto · verotus</div>
+  <h1>Veroetu jäällä</h1>
+  <p class="dek">Kaksi yhtä hyvää GM:ää. Toinen Winnipegissä, toinen Floridassa. Kumpi voittaa todennäköisemmin?</p>
+  <div class="byline">Syyskuu 2026</div>
+
+  <p>Aina kun joku nostaa esiin Floridan ja Tampan veroedun, vastaus on sama. Veroilla ei ole oikeasti väliä, kaikki on kiinni joukkueen kokoamistaidosta. Katsokaa vaikka Floridan 2000-lukua tai Seattlea.</p>
+  <p>Olen tästä pääosin samaa mieltä. Kokoamistaito on tärkein yksittäinen tekijä, eikä mikään veroetu pelasta huonosti johdettua seuraa. Minua ärsyttää silti se, että keskustelu loppuu siihen. Kysymys ei ole siitä, voittaako huono GM Floridassa hyvän GM:n Winnipegissä. Kysymys on siitä, mitä tapahtuu, kun <b>kaksi yhtä hyvää</b> joukkueen kokoajaa kilpailee eri verotuksen alla.</p>
+  <p>Kävin läpi datan. Tässä mitä löysin.</p>
+
+  <h2>Ajatuskoe: sama katto, eri tilipussi</h2>
+  <div class="gm">
+    <div class="w"><b>GM Winnipegissä</b>Manitoban ja Kanadan liittovaltion veroaste ylimmästä tulosta 50,4 %.</div>
+    <div class="f"><b>GM Floridassa</b>Ei osavaltion tuloveroa. USA:n liittovaltion veroaste ylimmästä tulosta 37 %.</div>
+  </div>
+  <p>Molemmilla on käytössään sama 95,5 miljoonan dollarin palkkakatto kaudella 2025–26. Laskin, paljonko siitä jää pelaajille käteen, kun katto jaetaan 23 pelaajalle tyypillisen NHL-palkkarakenteen mukaan.</p>
+  <div class="cmp" role="img" aria-label="Nettopalkat täydellä palkkakatolla: Winnipeg 47,9, Edmonton 50,3 ja Florida 56,9 miljoonaa dollaria">
+    <div class="lbl"><span>Winnipeg</span><span>47,9 M$ nettona</span></div>
+    <div class="track"><div class="fill c-ca" style="width:50.1%">50,1 %</div></div>
+    <div class="lbl"><span>Edmonton</span><span>50,3 M$ nettona</span></div>
+    <div class="track"><div class="fill c-ca2" style="width:52.6%">52,6 %</div></div>
+    <div class="lbl"><span>Florida</span><span>56,9 M$ nettona</span></div>
+    <div class="track"><div class="fill c-nt" style="width:59.6%">59,6 %</div></div>
+    <small>Palkin koko pituus = 95,5 M$ bruttokatto. Floridan luvussa on mukana arvio vieraspeleistä maksettavista veroista.</small>
+  </div>
+  <div class="big">
+    <div class="nt"><b>+9,1 M$</b>enemmän käteen Floridan pelaajille joka vuosi samalla katolla</div>
+    <div class="ca"><b>113,6 M$</b>katto, jolla Winnipeg voisi maksaa saman nettosumman kuin Florida</div>
+    <div><b>11,9 M$</b>jonka Winnipegin pitää maksaa, jotta pelaajalle jää yhtä paljon kuin Floridan 10 M$:sta</div>
+  </div>
+  <p>Floridan GM:llä on siis käytännössä noin 18 miljoonaa dollaria isompi katto. Se ei näy missään taulukossa, mutta se näkyy jokaisessa neuvottelussa. Florida voi tarjota pienempää sopimusta, ja pelaaja päätyy silti parempaan nettotulokseen. Katosta säästynyt raha menee kolmanteen ketjuun, kolmanteen puolustajapariin tai varamaalivahtiin. Juuri niissä mestarijoukkueet erottuvat muista.</p>
+  <p>Kaksi yhtä hyvää GM:ää tekee yhtä hyviä päätöksiä. Floridan GM:llä on vain enemmän rahaa niiden toteuttamiseen.</p>
+
+  <h2>Näkyykö tämä tuloksissa?</h2>
+  <p>Kävin läpi koko palkkakattoajan, kaudet 2005–06 – 2025–26, eli 644 joukkuekautta NHL:n omasta datasta. Jokaiselle joukkueelle ja kaudelle etsin kotipaikan ylimmän tuloveroasteen.</p>
+  <p>Ensimmäisellä kymmenellä kaudella veroilla ei ollut mitään merkitystä. Vuosina 2006–2015 kaikki kymmenen mestaruutta menivät joukkueille, jotka maksavat osavaltioveroa. Verottomat joukkueet olivat keskimäärin liigan alapuoliskolla. Tämä on juuri se aikakausi, johon "kokoamistaito ratkaisee" -argumentti yleensä nojaa.</p>
+  <p>Vuoden 2016 jälkeen kuva kääntyy.</p>
+  <div class="big">
+    <div class="nt"><b>11 / 22</b>finaalipaikkaa verottomille joukkueille 2016–2026</div>
+    <div class="nt"><b>5 / 11</b>mestaruutta verottomille, vaikka ne ovat vain 17 % liigasta</div>
+    <div class="ca"><b>0 / 21</b>mestaruutta Kanadaan koko palkkakattoaikana</div>
+  </div>
+  <p>Ajoitukselle löytyy selitys. Kanadan liittovaltio nosti ylintä veroastetta vuonna 2016, ja USA laski omaansa vuonna 2018. Ero kasvoi kerralla muutamasta prosenttiyksiköstä yli kymmeneen. Koronan jälkeen katto jäädytettiin vielä kolmeksi kaudeksi. Kun bruttopalkat eivät nousseet, nettopalkan merkitys kasvoi.</p>
+
+  <h2>Kyllä, kokoamistaito ratkaisee eniten</h2>
+  <p>Data tukee myös vastapuolen argumenttia, ja se kannattaa sanoa ääneen.</p>
+  <ul>
+    <li>Florida, Tampa ja Nashville olivat verottomia myös 2000-luvulla, ja silloin ne olivat keskimäärin heikkoja. Huonosti johdettua joukkuetta veroetu ei pelasta.</li>
+    <li>Seattle on veroton, mutta ei ole vielä noussut kärkeen.</li>
+    <li>Pittsburgh, Boston, Chicago ja Los Angeles voittivat mestaruuksia korkeammista veroista huolimatta. Carolina voitti 2026, ja sen veroaste on keskitasoa.</li>
+    <li>Kun vertaa saman joukkueen kausia, veroasteen nousu ei yksin ennusta heikkenemistä.</li>
+  </ul>
+  <p>Tämä ei kuitenkaan kumoa ajatuskoetta, vaan tukee sitä. Veroetu ei tee joukkueesta hyvää. Se toimii hyvän johdon vipuvartena. Siksi se näkyy vasta, kun Tampan ja Floridan kaltaiset hyvin johdetut organisaatiot ovat verottomassa osavaltiossa.</p>
+
+  <h2>Oma johtopäätökseni</h2>
+  <blockquote>Kokoamistaito ratkaisee, kuka on hyvä. Veroetu voi ratkaista, kuka hyvistä voittaa.</blockquote>
+  <p>Kun sanotaan, ettei veroedulla ole väliä, verrataan yleensä hyvää ja huonoa GM:ää. Silloin taito voittaa aina. Kärjessä kilpailevat kuitenkin hyvät GM:t keskenään, ja siellä 9 miljoonan vuosittainen ero nettopalkoissa on iso asia. Se on suunnilleen yhden tähtipelaajan tai kahden laadukkaan roolipelaajan palkka.</p>
+  <p>Kysyisinkin, pitäisikö liigan puuttua tähän seuraavassa työehtosopimuksessa. Vai kuuluuko veroetu samaan kategoriaan kuin ilmasto ja kaupungin houkuttelevuus, eli asioihin, joita ei kuulukaan tasata?</p>
+
+  <div class="cta">Kaikki luvut, kaaviot ja joukkuekohtaiset tiedot löytyvät erillisestä dataraportista: <a href="raportti.html">NHL:n veroetu palkkakaudella</a>.</div>
+
+  <p class="fine">Menetelmä lyhyesti: sarjataulukot ja pudotuspelit NHL:n julkisesta rajapinnasta. Veroasteet ovat ylimpiä lakisääteisiä marginaaliveroasteita julkisista verotaulukoista, ja ne ovat likiarvoja. Kaupunkiverot eivät ole mukana. Nettopalkat on laskettu vuoden 2025 veroasteikoilla verotuksella sinkkuna, kurssilla 1,38 CAD/USD ja arviona vieraspelien veroista (Florida 2 % palkasta). Kanadan joukkueiden pelaajien USA:ssa maksamat verot hyvitetään Kanadan verosta. Pelaajan todellinen vero riippuu asuinpaikasta, perhetilanteesta ja sopimuksen rakenteesta. Selvitys näyttää yhteyksiä, mutta ei todista syy-seuraussuhdetta.</p>
+</article>
+
+</body>
+</html>
