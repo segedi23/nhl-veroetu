@@ -157,13 +157,15 @@ code{font-family:var(--f-mono);font-size:.88em}
 </section>
 
 <section class="prose">
-  <h2>Mitä tilastomalli sanoo</h2>
-  <p>Laskin lineaarisen regression, jossa selitettävä on sijoitusindeksi ja selittäjä veroaste. Kausikohtaiset vakiot poistavat liigan vuosittaiset erot.</p>
-  <h3>Joukkueiden välinen vertailu</h3>
-  <p>2016–2026: yhden prosenttiyksikön korkeampi veroaste vastaa noin 1 indeksipisteen heikompaa sijoitusta (keskivirhe 0,3). Toronton ja Dallasin 16,5 prosenttiyksikön ero vastaa siis noin 17 pistettä eli noin 5 sijaa 32 joukkueen liigassa. Vuosina 2006–2015 kerroin oli positiivinen (+0,8), eli yhteyttä ei ollut.</p>
-  <h3>Saman joukkueen sisäinen vertailu</h3>
-  <p>Kun malliin lisätään joukkuekohtaiset vakiot, jäljelle jää vain veroasteen muutos saman joukkueen sisällä. Silloin kerroin on nolla tai positiivinen, eikä se ole tilastollisesti merkitsevä 5 %:n tasolla. Kanadan joukkueet eivät heikentyneet vuoden 2016 veronkorotuksen jälkeen, eivätkä Kalifornian joukkueet vuoden 2012 jälkeen. Myöskään Pohjois-Carolinan veronlaskut (8,25 % → 3,99 %) eivät yksin selitä Carolinan nousua.</p>
-  <p>Tulos tarkoittaa, että ero näkyy pysyvänä erona joukkueiden välillä eikä seuraa verojen muutoksia. Se sopii yhteen kahden selityksen kanssa. Veroetu voi vaikuttaa hitaasti johdon kykyyn rakentaa joukkuetta, tai menestyneillä verottomilla seuroilla on muita yhteisiä piirteitä. Aineistosta ei voi erottaa näitä toisistaan.</p>
+  <h2>Onko kyse sattumasta?</h2>
+  <p>Kokeilin asiaa laskennallisesti kahdella kysymyksellä. Tuloksissa on huomioitu, että liigan taso vaihtelee kausittain.</p>
+  <h3>1. Menestyvätkö matalan veron joukkueet paremmin kuin korkean veron joukkueet?</h3>
+  <p><b>2016 jälkeen kyllä.</b> Jokainen prosenttiyksikkö lisää veroa tarkoittaa keskimäärin noin yhtä sijaa huonompaa sijoitusindeksiä. Toronton ja Dallasin veroero on 16,5 prosenttiyksikköä, mikä vastaa noin viittä sijaa runkosarjan taulukossa. Tulos on niin selvä, että se tuskin on sattumaa.</p>
+  <p><b>Ennen vuotta 2016 ei.</b> Silloin korkean veron joukkueet pärjäsivät jopa hieman paremmin.</p>
+  <h3>2. Kun saman joukkueen verot muuttuvat, muuttuuko sen menestys?</h3>
+  <p><b>Ei.</b> Tämä on tarkempi testi, koska siinä joukkuetta verrataan vain itseensä. Kanadan joukkueet eivät heikentyneet vuoden 2016 veronkorotuksen jälkeen, eivätkä Kalifornian joukkueet vuoden 2012 korotuksen jälkeen. Carolinan nousua ei myöskään voi selittää pelkästään Pohjois-Carolinan veronalennuksilla, vaikka vero laski 8,25 %:sta 3,99 %:iin.</p>
+  <h3>Mitä tämä tarkoittaa?</h3>
+  <p>Ero näkyy joukkueiden välillä, mutta ei silloin, kun saman joukkueen verot muuttuvat. Veroetu ei siis toimi niin, että veron laskiessa tulokset paranisivat heti. Se voi vaikuttaa hitaasti, esimerkiksi siihen, keitä pelaajia joukkue saa ja pitää vuosien ajan. Toinen mahdollisuus on, että menestyneillä verottomilla seuroilla on muitakin yhteisiä vahvuuksia. Tästä aineistosta ei voi varmuudella sanoa, kumpi selitys on oikea.</p>
 </section>
 
 <section class="two">
@@ -174,11 +176,11 @@ code{font-family:var(--f-mono);font-size:.88em}
     <p><b>Alle markkinahinnan tehdyt sopimukset.</b> Tampan ja Floridan tähdet (mm. Kutšerov, Hedman, Point, Barkov, Reinhart) allekirjoittivat pitkiä sopimuksia, joita on laajasti pidetty edullisina. Säästetty katto käytettiin syvyyteen.</p>
   </div>
   <div class="prose">
-    <h2>Rajoitukset</h2>
-    <p><b>Jock tax.</b> Pelaajat maksavat osavaltioveroa vieraspeleistä, joten verottomankin joukkueen pelaaja maksaa sitä noin puolesta palkastaan. Todellinen ero on pienempi kuin otsikkoaste.</p>
-    <p><b>Paikalliset verot puuttuvat.</b> New Yorkin kaupunkivero, Philadelphian ja Pittsburghin palkkavero sekä Detroitin kaupunkivero on jätetty pois. Washingtonin pelaajille käytetään Virginian veroa, koska suurin osa asuu siellä.</p>
-    <p><b>Muut tekijät.</b> Ilmasto, mediapaine, markkinan koko ja Kanadan dollari vaikuttavat samoihin pelaajapäätöksiin. Kanadan joukkueet ovat keskimäärin keskikastia, eivät pohjalla, joten veron vaikutus näyttää rajalliselta.</p>
-    <p><b>Pieni otos.</b> Verottomia joukkueita on vain viisi, ja kaksi niistä (Vegas, Seattle) on tullut liigaan kesken jakson.</p>
+    <h2>Mitä luvuista puuttuu</h2>
+    <p><b>Vieraspelien verot.</b> Pelaaja maksaa veroa myös niissä osavaltioissa, joissa pelaa vieraspelejä. Myös Floridan pelaaja maksaa siis jonkin verran osavaltioveroa, joten todellinen ero on hieman pienempi kuin veroasteista näyttää. Nettopalkkalaskelmassa tämä on otettu huomioon arviona.</p>
+    <p><b>Kaupunkiverot.</b> Esimerkiksi New Yorkin, Philadelphian ja Detroitin omat kaupunkiverot eivät ole mukana. Niiden kanssa ero olisi vielä suurempi.</p>
+    <p><b>Muut syyt.</b> Pelaajan valintaan vaikuttavat myös ilmasto, mediapaine, kaupungin koko ja perhe. Näitä ei voi erottaa veroista.</p>
+    <p><b>Vähän joukkueita.</b> Verottomia joukkueita on vain viisi, ja kaksi niistä, Vegas ja Seattle, tuli liigaan vasta kesken tarkastelujakson.</p>
   </div>
 </section>
 
@@ -212,17 +214,22 @@ code{font-family:var(--f-mono);font-size:.88em}
 
 <section>
   <h2 class="prose">Kaikki joukkueet</h2>
-  <p class="prose">Järjestetty keskimääräisen sijoitusindeksin mukaan. Veroaste ensimmäiseltä ja viimeiseltä kaudelta.</p>
+  <p class="prose">Joukkueet on järjestetty sen mukaan, miten hyvin ne ovat keskimäärin sijoittuneet runkosarjassa.</p>
+  <ul class="prose note" style="margin:0;padding-left:1.2rem;display:flex;flex-direction:column;gap:4px">
+    <li><b>Veroaste:</b> ylin veroaste ensimmäisellä ja viimeisellä kaudella. Nuoli näyttää, miten vero on muuttunut.</li>
+    <li><b>Sijoitusindeksi:</b> 100 = aina runkosarjan paras, 50 = keskitaso, 0 = aina huonoin.</li>
+    <li><b>Pudotuspelit:</b> monellako kaudella joukkue pääsi pudotuspeleihin, esimerkiksi 16/21.</li>
+  </ul>
   <div class="tbl"><table>
     <thead><tr><th scope="col" style="text-align:left">Joukkue</th><th scope="col">Alue</th><th scope="col">Veroaste</th><th scope="col">Sijoitusindeksi</th><th scope="col">Pudotuspelit</th><th scope="col">Finaalit</th><th scope="col">Mestaruudet</th></tr></thead>
     <tbody><tr><th scope="row"><span class="dot f-nt"></span>VGK</th><td>NV</td><td>37,0 → 37,0</td><td>73</td><td>8/9</td><td>3</td><td>1</td></tr><tr><th scope="row"><span class="dot f-us"></span>PIT</th><td>PA</td><td>38,1 → 40,1</td><td>70</td><td>16/21</td><td>4</td><td>3</td></tr><tr><th scope="row"><span class="dot f-us"></span>WSH</th><td>VA</td><td>40,8 → 42,8</td><td>69</td><td>16/21</td><td>1</td><td>1</td></tr><tr><th scope="row"><span class="dot f-us"></span>BOS</th><td>MA</td><td>40,3 → 46,0</td><td>68</td><td>16/21</td><td>3</td><td>1</td></tr><tr><th scope="row"><span class="dot f-nt"></span>DAL</th><td>TX</td><td>35,0 → 37,0</td><td>60</td><td>12/21</td><td>1</td><td>0</td></tr><tr><th scope="row"><span class="dot f-nt"></span>TBL</th><td>FL</td><td>35,0 → 37,0</td><td>58</td><td>15/21</td><td>4</td><td>2</td></tr><tr><th scope="row"><span class="dot f-us"></span>NYR</th><td>NY</td><td>41,9 → 47,9</td><td>58</td><td>14/21</td><td>1</td><td>0</td></tr><tr><th scope="row"><span class="dot f-nt"></span>NSH</th><td>TN</td><td>35,0 → 37,0</td><td>57</td><td>14/21</td><td>1</td><td>0</td></tr><tr><th scope="row"><span class="dot f-us"></span>STL</th><td>MO</td><td>41,0 → 41,7</td><td>57</td><td>12/21</td><td>1</td><td>1</td></tr><tr><th scope="row"><span class="dot f-us"></span>COL</th><td>CO</td><td>39,6 → 41,2</td><td>56</td><td>13/21</td><td>1</td><td>1</td></tr><tr><th scope="row"><span class="dot f-us"></span>CAR</th><td>NC</td><td>43,2 → 41,0</td><td>55</td><td>10/21</td><td>2</td><td>2</td></tr><tr><th scope="row"><span class="dot f-us"></span>MIN</th><td>MN</td><td>42,9 → 46,9</td><td>55</td><td>13/21</td><td>0</td><td>0</td></tr><tr><th scope="row"><span class="dot f-us"></span>SJS</th><td>CA</td><td>45,3 → 51,4</td><td>55</td><td>13/21</td><td>1</td><td>0</td></tr><tr><th scope="row"><span class="dot f-us"></span>DET</th><td>MI</td><td>38,9 → 41,2</td><td>52</td><td>11/21</td><td>2</td><td>1</td></tr><tr><th scope="row"><span class="dot f-ca"></span>WPG</th><td>MB</td><td>46,4 → 50,4</td><td>52</td><td>7/15</td><td>0</td><td>0</td></tr><tr><th scope="row"><span class="dot f-us"></span>ANA</th><td>CA</td><td>45,3 → 51,4</td><td>52</td><td>12/21</td><td>1</td><td>1</td></tr><tr><th scope="row"><span class="dot f-ca"></span>VAN</th><td>BC</td><td>43,7 → 53,5</td><td>48</td><td>9/21</td><td>1</td><td>0</td></tr><tr><th scope="row"><span class="dot f-us"></span>UTA</th><td>UT</td><td>41,5 → 41,5</td><td>48</td><td>1/2</td><td>0</td><td>0</td></tr><tr><th scope="row"><span class="dot f-ca"></span>MTL</th><td>QC</td><td>48,2 → 53,3</td><td>48</td><td>13/21</td><td>1</td><td>0</td></tr><tr><th scope="row"><span class="dot f-us"></span>PHI</th><td>PA</td><td>38,1 → 40,1</td><td>47</td><td>11/21</td><td>1</td><td>0</td></tr><tr><th scope="row"><span class="dot f-ca"></span>TOR</th><td>ON</td><td>46,4 → 53,5</td><td>47</td><td>9/21</td><td>0</td><td>0</td></tr><tr><th scope="row"><span class="dot f-ca"></span>CGY</th><td>AB</td><td>39,0 → 48,0</td><td>47</td><td>9/21</td><td>0</td><td>0</td></tr><tr><th scope="row"><span class="dot f-us"></span>LAK</th><td>CA</td><td>45,3 → 51,4</td><td>46</td><td>12/21</td><td>2</td><td>2</td></tr><tr><th scope="row"><span class="dot f-us"></span>CHI</th><td>IL</td><td>38,0 → 42,0</td><td>45</td><td>10/21</td><td>3</td><td>3</td></tr><tr><th scope="row"><span class="dot f-us"></span>NJD</th><td>NJ</td><td>44,0 → 47,8</td><td>44</td><td>9/21</td><td>1</td><td>0</td></tr><tr><th scope="row"><span class="dot f-nt"></span>FLA</th><td>FL</td><td>35,0 → 37,0</td><td>44</td><td>7/21</td><td>3</td><td>2</td></tr><tr><th scope="row"><span class="dot f-ca"></span>OTT</th><td>ON</td><td>46,4 → 53,5</td><td>41</td><td>10/21</td><td>1</td><td>0</td></tr><tr><th scope="row"><span class="dot f-us"></span>NYI</th><td>NY</td><td>41,9 → 47,9</td><td>39</td><td>9/21</td><td>0</td><td>0</td></tr><tr><th scope="row"><span class="dot f-ca"></span>EDM</th><td>AB</td><td>39,0 → 48,0</td><td>38</td><td>8/21</td><td>3</td><td>0</td></tr><tr><th scope="row"><span class="dot f-us"></span>BUF</th><td>NY</td><td>41,9 → 47,9</td><td>35</td><td>5/21</td><td>0</td><td>0</td></tr><tr><th scope="row"><span class="dot f-us"></span>CBJ</th><td>OH</td><td>41,9 → 39,8</td><td>32</td><td>6/21</td><td>0</td><td>0</td></tr><tr><th scope="row"><span class="dot f-us"></span>ARI</th><td>AZ</td><td>39,8 → 39,5</td><td>29</td><td>4/19</td><td>0</td><td>0</td></tr><tr><th scope="row"><span class="dot f-us"></span>ATL</th><td>GA</td><td>41,0 → 41,0</td><td>26</td><td>1/6</td><td>0</td><td>0</td></tr><tr><th scope="row"><span class="dot f-nt"></span>SEA</th><td>WA</td><td>37,0 → 37,0</td><td>25</td><td>1/5</td><td>0</td><td>0</td></tr></tbody></table></div>
 </section>
 
 <section class="prose note">
-  <h2>Aineisto ja menetelmä</h2>
-  <p>Sarjataulukot ja pudotuspelikaaviot: NHL:n julkinen rajapinta (<code>api-web.nhle.com</code>), kaudet 2005–06 – 2025–26, 644 joukkuekautta. Phoenix ja Arizona on yhdistetty. Utah on oma joukkueensa kaudesta 2024–25 alkaen.</p>
-  <p>Veroasteet: ylimmät lakisääteiset marginaaliveroasteet kauden päättymisvuodelta, koottu julkisista verotaulukoista. Luvut ovat likiarvoja. Esimerkiksi Kalifornian 14,4 % sisältää vuodesta 2024 alkaen SDI-maksun. Massachusettsin 9 % sisältää vuonna 2023 voimaan tulleen miljonäärilisäveron. Kanadan luvut ovat yhdistettyjä liittovaltion ja provinssin asteita. Pelaajakohtaista todellista veroa ei ole laskettu.</p>
-  <p>Selvitys on kuvaileva. Se näyttää, missä menestys ja veroasteet kohtaavat, mutta ei todista, että verot olisivat aiheuttaneet menestyksen.</p>
+  <h2>Mistä luvut tulevat</h2>
+  <p><b>Tulokset:</b> NHL:n oma julkinen tietokanta. Mukana ovat kaikki runkosarjat ja pudotuspelit kausilta 2005–06 – 2025–26, yhteensä 644 joukkuekautta. Phoenix ja Arizona on laskettu samaksi joukkueeksi, ja Utah on oma joukkueensa kaudesta 2024–25 alkaen.</p>
+  <p><b>Veroasteet:</b> kunkin osavaltion tai provinssin ylin tuloveroaste yhdessä valtion veron kanssa, eli vero, jonka hyvätuloinen pelaaja maksaa palkkansa ylimmästä osasta. Luvut on koottu julkisista verotaulukoista ja ne ovat likiarvoja. Washingtonin pelaajille on käytetty Virginian veroa, koska suurin osa heistä asuu siellä.</p>
+  <p><b>Tärkein varaus:</b> selvitys näyttää, että matala vero ja menestys ovat kulkeneet käsi kädessä vuodesta 2016 alkaen. Se ei todista, että verot olisivat aiheuttaneet menestyksen.</p>
 </section>
 </div>
 
